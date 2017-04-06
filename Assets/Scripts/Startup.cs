@@ -19,6 +19,7 @@ public class Startup : MonoBehaviour {
         lvlMan.start = true;
         lvlMan.hasWeapon = false;
         lvlMan.hasUpgrade = false;
+        lvlMan.trial = true;
         Instantiate(startPoint, point, transform.rotation);
         Instantiate(player, new Vector3(0, 0.2f, 0), transform.rotation);
         //GameObject story = Instantiate(storyPoint, point + new Vector3(0, 0.1f, 0), transform.rotation) as GameObject;

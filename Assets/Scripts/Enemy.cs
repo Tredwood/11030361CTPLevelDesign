@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour {
     Transform Player;
 
     public float MoveSpeed = 1f;
-    public float MinDis = 7f;
+    public float MinDis = 1f;
     
     void Start ()
     {
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour {
         if (Vector3.Distance(transform.position, Player.position) <= MinDis)
         {
             
-            transform.position += transform.forward * MoveSpeed * Time.deltaTime;
+            transform.position += transform.forward / MoveSpeed * Time.deltaTime;
             
         }
     }

@@ -50,7 +50,6 @@ public class Challenge : MonoBehaviour {
                 else if (challenge == 2)
                 {
                     int pointLength = spawnPoints.Count;
-                    Debug.Log(pointLength);
                     int newPos = Random.Range(0, (pointLength));
                     Quaternion rot = Quaternion.FromToRotation(Vector3.forward, (Vector3)spawnPoints[newPos]);
                     GameObject Target = Instantiate(target, pos + (Vector3)spawnPoints[newPos], transform.rotation) as GameObject;
